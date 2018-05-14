@@ -15,17 +15,22 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var playNowButton: UIButton!
 
     var count : Float = 0.0
+    var selectedTimerTime : Float = 0.0
     var timer : Timer?
     var feedViewController = FeedViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        count = selectedTimerTime
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
          feedViewController = storyboard.instantiateViewController(withIdentifier: "FeedViewController") as! FeedViewController
+         feedViewController.fireTimerDelegate = self
          feedViewController.view.frame = qiuzViewContainer.bounds;
          qiuzViewContainer.addSubview(feedViewController.view)
          self.addChildViewController(feedViewController)
-         createTimer()
+        // createTimer()
     }
     
     
@@ -97,10 +102,20 @@ extension QuizViewController : RandomImageProtocol {
         let cancelAction = UIAlertAction.init(title: "Try new quiz", style: .cancel, handler: { (action:UIAlertAction) in
             self.feedViewController.fetchPhotoFeed()
             self.playNowButton.isHidden = false
-            self.createTimer()
+            self.feedViewController.isTimerOn = false
+            //self.timer?.invalidate()
+            //self.createTimer()
          })
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
+    }
+}
+
+extension QuizViewController : FeedViewTimerProtocol {
+    func fireTimer() {
+       count = selectedTimerTime
+       self.timer?.invalidate()
+       createTimer()
     }
     
 }

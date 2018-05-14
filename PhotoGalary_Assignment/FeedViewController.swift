@@ -10,9 +10,14 @@
 
 import UIKit
 
+protocol FeedViewTimerProtocol  {
+    
+    func fireTimer()
+}
 
 class FeedViewController: UICollectionViewController {
     
+    var  fireTimerDelegate : FeedViewTimerProtocol?
     var photos: [Photo]?
     var currentMessage = "Loading photos..."
     let cellIdentifier = "photoCell"
@@ -45,6 +50,11 @@ class FeedViewController: UICollectionViewController {
             self?.photos = photos
             DispatchQueue.main.async {
                 self?.collectionView?.reloadData()
+                // fire timer from here
+                if (self!.fireTimerDelegate != nil) {
+                    self?.fireTimerDelegate?.fireTimer()
+                    self?.isTimerOn = true
+                }
             }
         }
     }

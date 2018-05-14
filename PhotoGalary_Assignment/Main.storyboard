@@ -181,7 +181,7 @@
                                     <constraint firstAttribute="height" constant="400" id="pca-gA-1Hv"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hw-QM-jGl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firing timer now..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hw-QM-jGl">
                                 <rect key="frame" x="16" y="93" width="343" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="dWq-xc-14e"/>

@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let quizViewController = storyboard.instantiateViewController(withIdentifier: "QuizViewController") as! QuizViewController
-            quizViewController.count = self.timeChoosenInSeconds
+            quizViewController.selectedTimerTime = self.timeChoosenInSeconds
             self.navigationController?.pushViewController(quizViewController, animated: true)
         })
         let cancelAction = UIAlertAction.init(title: "Reset time", style: .cancel, handler: nil)
