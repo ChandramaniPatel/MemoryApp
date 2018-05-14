@@ -18,8 +18,6 @@
 		A733CB6D20A6C7E0009F745A /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733CB6C20A6C7E0009F745A /* NetworkClient.swift */; };
 		A733CB6F20A6C7E7009F745A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733CB6E20A6C7E6009F745A /* Photo.swift */; };
 		A733CB7120A6C7EC009F745A /* Photo+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733CB7020A6C7EC009F745A /* Photo+Services.swift */; };
-		A733CB7520A6DE4E009F745A /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733CB7420A6DE4E009F745A /* PhotoViewController.swift */; };
-		A733CB7720A717B8009F745A /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733CB7620A717B8009F745A /* DetailCollectionViewCell.swift */; };
 		A733CB7920A877F9009F745A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733CB7820A877F9009F745A /* HomeViewController.swift */; };
 		A733CB7B20A8860B009F745A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733CB7A20A8860B009F745A /* QuizViewController.swift */; };
 		A733CB7D20A8916B009F745A /* MEDIUM-CARD.png in Resources */ = {isa = PBXBuildFile; fileRef = A733CB7C20A8916A009F745A /* MEDIUM-CARD.png */; };
@@ -52,8 +50,6 @@
 		A733CB6C20A6C7E0009F745A /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		A733CB6E20A6C7E6009F745A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		A733CB7020A6C7EC009F745A /* Photo+Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+Services.swift"; sourceTree = "<group>"; };
-		A733CB7420A6DE4E009F745A /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
-		A733CB7620A717B8009F745A /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		A733CB7820A877F9009F745A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A733CB7A20A8860B009F745A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		A733CB7C20A8916A009F745A /* MEDIUM-CARD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MEDIUM-CARD.png"; path = "../MEDIUM-CARD.png"; sourceTree = "<group>"; };
@@ -106,8 +102,6 @@
 				A733CB7A20A8860B009F745A /* QuizViewController.swift */,
 				A733CB7E20A8A693009F745A /* RandomImageViewController.swift */,
 				A733CB6620A6C722009F745A /* FeedViewController.swift */,
-				A733CB7420A6DE4E009F745A /* PhotoViewController.swift */,
-				A733CB7620A717B8009F745A /* DetailCollectionViewCell.swift */,
 				A733CB6820A6C742009F745A /* PhotoCell.swift */,
 				A733CB6A20A6C747009F745A /* MessageCell.swift */,
 				A733CB4B20A6C6B0009F745A /* Assets.xcassets */,
@@ -238,11 +232,9 @@
 				A733CB6720A6C722009F745A /* FeedViewController.swift in Sources */,
 				A733CB7F20A8A693009F745A /* RandomImageViewController.swift in Sources */,
 				A733CB7920A877F9009F745A /* HomeViewController.swift in Sources */,
-				A733CB7520A6DE4E009F745A /* PhotoViewController.swift in Sources */,
 				A733CB7B20A8860B009F745A /* QuizViewController.swift in Sources */,
 				A733CB4520A6C6AD009F745A /* AppDelegate.swift in Sources */,
 				A733CB6D20A6C7E0009F745A /* NetworkClient.swift in Sources */,
-				A733CB7720A717B8009F745A /* DetailCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

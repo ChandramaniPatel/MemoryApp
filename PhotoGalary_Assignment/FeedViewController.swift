@@ -95,16 +95,4 @@ class FeedViewController: UICollectionViewController {
         }
         return cell
     }
-    
-    
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if isTimerOn {
-            guard (photos?[indexPath.item]) != nil else { return }
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let photoViewController = storyboard.instantiateViewController(withIdentifier: "PhotoViewController") as! PhotoViewController
-            photoViewController.photos = self.photos
-            photoViewController.selectedIndexPath = indexPath
-            self.navigationController?.pushViewController(photoViewController, animated: true)
-        }
-    }
 }
